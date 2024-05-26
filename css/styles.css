@@ -13,6 +13,10 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --blueMisty: #C3CEDA;
+  --blueGray: #738FA7;
+  --blueMidnight: #0C4160;
+  --blueDark: #071330;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,12 +335,48 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.header-padding {
+  padding-top: 90px;
+}
+@media (min-width: 768px) {
+  .header-padding {
+    padding-top: 220px;
+  }
+}
+
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+  background-color: transparent;
+}
+
 /* =============
     Forms
 ============= */
@@ -360,9 +400,96 @@ textarea {
 /* =============
     Navigation
 ============= */
+a:link, a:visited {
+  text-decoration: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+#main-nav {
+  background-color: var(--blueGray);
+  padding: 24px 16px;
+}
+#main-nav ul li a:link, #main-nav ul li a:visited {
+  display: inline-block;
+  color: var(--white);
+}
+#main-nav ul li:hover, #main-nav ul li:active {
+  color: var(--blueMidnight);
+}
+#main-nav ul li i {
+  padding-right: 8px;
+}
+
 /* =============
     Header
 ============= */
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto;
+  grid-template-columns: 20% auto;
+      grid-template-areas: "home-container burger-container" "main-nav main-nav";
+  padding: 24px 0 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--white);
+}
+
+#burger-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: burger-container;
+  padding-right: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 768px) {
+  #burger-container {
+    display: none;
+  }
+}
+#burger-container button {
+  padding: 0;
+  color: var(--black);
+}
+
+#main-nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main-nav;
+}
+@media (min-width: 768px) {
+  #main-nav {
+    display: block;
+  }
+}
+
+#home-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: home-container;
+  padding-left: 16px;
+}
+#home-container a i {
+  color: var(--black);
+}
+
+.hideMainNavAtMobile {
+  display: none;
+}
+
 /* =============
     Footer
 ============= */

@@ -1,3 +1,57 @@
 /* =============
     Header
 ============= */
+
+header{
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-areas: 
+    "home-container burger-container"
+    "main-nav main-nav";
+    padding: 24px 0 0;
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    width: 100%;
+    background-color: var(--white);
+}    
+
+#burger-container{
+    grid-area: burger-container;
+    padding-right: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include md{
+        display: none;
+    }
+
+    button{
+        padding: 0;
+        color: var(--black);
+    }
+}   
+
+#main-nav{
+    grid-area: main-nav;
+   
+    @include md{
+        display: block;
+    }
+}
+
+#home-container{
+    grid-area: home-container;
+    padding-left: 16px;
+    a{
+        i{
+            color: var(--black);
+        }
+    }
+}
+
+.hideMainNavAtMobile{
+    display: none;
+}

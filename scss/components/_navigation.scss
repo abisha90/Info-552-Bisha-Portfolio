@@ -1,3 +1,33 @@
 /* =============
     Navigation
 ============= */
+
+a:link, a:visited{
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+#main-nav{
+    background-color: var(--blueGray);
+    padding: 24px 16px;
+
+    ul{
+        li{ 
+            a:link, a:visited{
+                display: inline-block;
+                color: var(--white);
+            }
+            
+            &:hover, &:active{
+                    color: var(--blueMidnight);
+                }   
+                 
+            i{
+                padding-right: 8px;
+            } 
+
+  
+        }
+    }
+  
+}    
