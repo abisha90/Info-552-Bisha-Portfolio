@@ -1,3 +1,32 @@
 /* =============
     Footer
 ============= */
+
+footer{
+    padding-top: 16px;
+    text-align: center;
+
+    h2{
+        text-align: center;
+        background-color: var(--blueMidnight);
+        color: var(--blueMisty);
+
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--blueGray);
+        margin-top: 16px;
+        padding: 8px 0;
+
+        @include md{
+            padding: 16px 48px;
+        }
+        li{
+            a{
+                color: var(--white);
+            }
+        }
+    }
+}

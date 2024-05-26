@@ -1,0 +1,23 @@
+/* =============
+    Footer
+============= */
+footer {
+  padding-top: 16px;
+}
+footer h2 {
+  text-align: center;
+  background-color: var(--blueDark);
+  color: var(--blueMisty);
+}
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--blueGray);
+}

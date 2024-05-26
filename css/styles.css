@@ -493,3 +493,51 @@ header {
 /* =============
     Footer
 ============= */
+footer {
+  padding-top: 16px;
+  text-align: center;
+}
+footer h2 {
+  text-align: center;
+  background-color: var(--blueMidnight);
+  color: var(--blueMisty);
+}
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--blueGray);
+  margin-top: 16px;
+  padding: 8px 0;
+}
+@media (min-width: 768px) {
+  footer ul {
+    padding: 16px 48px;
+  }
+}
+footer ul li a {
+  color: var(--white);
+}
+
+#index-philosophy h1 {
+  text-align: center;
+  background-color: var(--blueMidnight);
+  color: var(--blueMisty);
+}
+#index-philosophy #powers-quote {
+  text-align: center;
+  padding: 16px 0;
+}
+#index-philosophy p {
+  text-align: center;
+  padding: 0 16px 8px;
+}
+#index-philosophy #phonebooth-img {
+  height: 50vh;
+  background-image: url("../img/Phonebooth.jpg");
+  background-size: cover;
+  background-position: center;
+}
