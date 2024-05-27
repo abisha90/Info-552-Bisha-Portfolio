@@ -1,0 +1,49 @@
+/* =============
+    Resume
+============= */
+
+#my-resume{
+    h1{
+        text-align: center;
+        background-color: var(--blueMidnight);
+        color: var(--blueMisty);
+
+    }
+
+    #resume-btn{
+        text-align: center;
+        padding: 12px;
+
+        @include lg{
+            padding-bottom: 24px;
+        }
+    }
+
+    #resume-full-txt{
+        padding-left: 8px;
+
+        @include md{
+            margin: 0 128px;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        h3{
+            padding-top: 16px;
+        }
+
+        ul{
+            li{
+                padding-top: 4px;
+            }
+        }
+
+    }
+}
+

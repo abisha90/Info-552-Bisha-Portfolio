@@ -374,7 +374,17 @@ h1, h2, h3, h4 {
 ============= */
 button {
   border: none;
+  cursor: pointer;
   background-color: transparent;
+}
+
+.blueDarkButton {
+  background-color: var(--blueDark);
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 800;
+  padding: 16px 40px;
+  border-radius: 8px;
 }
 
 /* =============
@@ -660,4 +670,42 @@ footer ul li a {
   -ms-grid-column-span: 3;
   grid-area: g7;
   background-image: url("../img/cat7.jpeg");
+}
+
+/* =============
+    Resume
+============= */
+#my-resume h1 {
+  text-align: center;
+  background-color: var(--blueMidnight);
+  color: var(--blueMisty);
+}
+#my-resume #resume-btn {
+  text-align: center;
+  padding: 12px;
+}
+@media (min-width: 1024px) {
+  #my-resume #resume-btn {
+    padding-bottom: 24px;
+  }
+}
+#my-resume #resume-full-txt {
+  padding-left: 8px;
+}
+@media (min-width: 768px) {
+  #my-resume #resume-full-txt {
+    margin: 0 128px;
+  }
+}
+#my-resume #resume-full-txt h2 {
+  text-align: center;
+}
+#my-resume #resume-full-txt p {
+  text-align: center;
+}
+#my-resume #resume-full-txt h3 {
+  padding-top: 16px;
+}
+#my-resume #resume-full-txt ul li {
+  padding-top: 4px;
 }

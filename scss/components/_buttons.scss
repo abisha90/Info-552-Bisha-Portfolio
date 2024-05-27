@@ -4,5 +4,15 @@
 
 button{
     border: none;
+    cursor: pointer;
     background-color: transparent;
+}
+
+.blueDarkButton{
+    background-color: var(--blueDark);
+    color: var(--white);
+    font-size: rem-calc(18);
+    font-weight: 800;
+    padding: 16px 40px;
+    border-radius: 8px;
 }
