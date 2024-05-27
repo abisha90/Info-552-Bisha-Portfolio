@@ -1,0 +1,50 @@
+/* =============
+    Organizations
+============= */
+
+#prof-orgs{
+    h1{
+        text-align: center;
+        background-color: var(--blueMidnight);
+        color: var(--blueMisty);
+    }
+
+    #org-list{
+
+        h2{
+        background-color: var(--blueMisty);
+        color: var(--blueMidnight);
+        margin: 16px 0;
+        text-align: center;
+        }
+
+        .blueDarkButton{
+            font-size: rem-calc(18);
+            font-weight: 600;
+            padding: 8px 16px;
+            margin-top: 8px;
+            margin-left: 8px;
+            a{
+                color: var(--white);
+            }
+        }
+    }
+}
+
+
+// li{
+//     h2{
+//         background-color: var(--blueMisty);
+//         color: var(--blueMidnight);
+//         margin: 16px 0;
+//         text-align: center;
+//     }
+
+//     .blueDarkButton{
+//         text-align: center;
+
+//         a{
+//             color: var(--white);
+//         }
+//     }
+// }

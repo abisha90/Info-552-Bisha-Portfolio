@@ -717,7 +717,7 @@ footer ul li a {
 }
 
 /* =============
-    About
+    Projects
 ============= */
 #coursework h1 {
   text-align: center;
@@ -728,4 +728,29 @@ footer ul li a {
   text-align: center;
   background-color: var(--blueDrexel);
   color: var(--yellowDrexel);
+}
+
+/* =============
+    Organizations
+============= */
+#prof-orgs h1 {
+  text-align: center;
+  background-color: var(--blueMidnight);
+  color: var(--blueMisty);
+}
+#prof-orgs #org-list h2 {
+  background-color: var(--blueMisty);
+  color: var(--blueMidnight);
+  margin: 16px 0;
+  text-align: center;
+}
+#prof-orgs #org-list .blueDarkButton {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+#prof-orgs #org-list .blueDarkButton a {
+  color: var(--white);
 }
