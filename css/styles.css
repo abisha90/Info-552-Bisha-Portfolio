@@ -17,6 +17,8 @@ html {
   --blueGray: #738FA7;
   --blueMidnight: #0C4160;
   --blueDark: #071330;
+  --blueDrexel: #0051ba;
+  --yellowDrexel: #ffda1a;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -594,6 +596,10 @@ footer ul li a {
 #about-me ul li {
   padding: 8px 16px 0 8px;
 }
+#about-me ul li a {
+  font-weight: 700;
+  color: var(--blueDark);
+}
 
 #cat-gallery-container h1 {
   background-color: var(--blueMisty);
@@ -708,4 +714,18 @@ footer ul li a {
 }
 #my-resume #resume-full-txt ul li {
   padding-top: 4px;
+}
+
+/* =============
+    About
+============= */
+#coursework h1 {
+  text-align: center;
+  background-color: var(--blueMidnight);
+  color: var(--blueMisty);
+}
+#coursework h2 {
+  text-align: center;
+  background-color: var(--blueDrexel);
+  color: var(--yellowDrexel);
 }
