@@ -19,9 +19,27 @@
         text-align: center;
         padding: 0 16px 8px;
 
+        @include md{
+            padding: 0 32px 8px 32px;
+        }
+
+        @include lg{
+            padding: 0 96px 8px 96px;
+        }
+
     }
 
     #phonebooth-img{
+
+        @include md{
+            margin: 0 32px 0 32px;
+        }
+
+        @include lg{
+            height: 100vh;
+            margin: 0 96px 0 96px;
+        }
+
         height: 50vh;
         background-image: url("../img/Phonebooth.jpg");
         background-size: cover;

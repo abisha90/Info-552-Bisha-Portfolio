@@ -461,7 +461,8 @@ header {
 }
 #burger-container button {
   padding: 0;
-  color: var(--black);
+  color: var(--blueMidnight);
+  font-size: 1.375rem;
 }
 
 #main-nav {
@@ -483,7 +484,8 @@ header {
   padding-left: 16px;
 }
 #home-container a i {
-  color: var(--black);
+  color: var(--blueMidnight);
+  font-size: 1.375rem;
 }
 
 .hideMainNavAtMobile {
@@ -538,11 +540,32 @@ footer ul li a {
   text-align: center;
   padding: 0 16px 8px;
 }
+@media (min-width: 768px) {
+  #index-philosophy p {
+    padding: 0 32px 8px 32px;
+  }
+}
+@media (min-width: 1024px) {
+  #index-philosophy p {
+    padding: 0 96px 8px 96px;
+  }
+}
 #index-philosophy #phonebooth-img {
   height: 50vh;
   background-image: url("../img/Phonebooth.jpg");
   background-size: cover;
   background-position: center;
+}
+@media (min-width: 768px) {
+  #index-philosophy #phonebooth-img {
+    margin: 0 32px 0 32px;
+  }
+}
+@media (min-width: 1024px) {
+  #index-philosophy #phonebooth-img {
+    height: 100vh;
+    margin: 0 96px 0 96px;
+  }
 }
 
 /* =============
@@ -565,7 +588,8 @@ footer ul li a {
 #cat-gallery-container h1 {
   background-color: var(--blueMisty);
   color: var(--blueMidnight);
-  margin-top: 16px;
+  margin: 16px 0;
+  text-align: center;
 }
 #cat-gallery-container #cat-gallery {
   padding: 0 16px 16px 16px;
@@ -577,6 +601,11 @@ footer ul li a {
   -ms-grid-rows: 20vh 8px 25vh 8px 25vh 8px 25vh;
   grid-template-rows: 20vh 25vh 25vh 25vh;
       grid-template-areas: "g1 g1 g2 g2" "g3 g4 g4 g4" "g5 g5 g6 g6" ". g7 g7 .";
+}
+@media (min-width: 768px) {
+  #cat-gallery-container #cat-gallery {
+    padding: 0 48px 16px 48px;
+  }
 }
 #cat-gallery-container #cat-gallery li {
   background-size: cover;

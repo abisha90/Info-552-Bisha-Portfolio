@@ -27,10 +27,15 @@
     h1{
         background-color: var(--blueMisty);
         color: var(--blueMidnight);
-        margin-top: 16px;
+        margin: 16px 0;
+        text-align: center;
     }
 
     #cat-gallery{
+
+        @include md{
+            padding: 0 48px 16px 48px;
+        }
         padding: 0 16px 16px 16px;
         display: grid;
         gap: 8px;
