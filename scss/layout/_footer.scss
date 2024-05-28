@@ -23,6 +23,10 @@ footer{
         @include md{
             padding: 16px 48px;
         }
+
+        @include lg{
+            padding: 16px 128px;
+        }
         li{
             a{
                 color: var(--white);

@@ -1,0 +1,83 @@
+/* =============
+    Contact
+============= */
+
+#contact-me{
+    h1{
+        text-align: center;
+        background-color: var(--blueMidnight);
+        color: var(--blueMisty);
+        margin-bottom: 16px;
+    }
+
+    #goodbye-img{
+
+        @include md{
+            margin: 0 32px 0 32px;
+        }
+
+        @include lg{
+            height: 100vh;
+            margin: 0 96px 0 96px;
+        }
+
+        height: 50vh;
+        background-image: url("../img/Phonebooth.jpg");
+        background-size: cover;
+        // x = right | center | left
+        // y = top | center | bottom
+        background-position: center;
+        // margin-top: 80px;
+    }
+
+
+    .blueDarkButton{
+        font-size: rem-calc(18);
+        font-weight: 600;
+        padding: 8px 16px;
+        margin-top: 8px;
+        margin-left: 8px;
+        a{
+            color: var(--white);
+        }
+
+        @include md{
+            font-size: rem-calc(24);
+            padding: 16px 20px;
+        }
+    }
+
+    #email-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2{
+        text-align: center;
+        background-color: var(--blueMisty);
+        color: var(--blueMidnight);
+        margin: 16px 0; 
+    }
+
+    #cat-shelf-img{
+
+        @include md{
+            margin: 0 32px 0 32px;
+        }
+
+        @include lg{
+            height: 100vh;
+            margin: 0 96px 0 96px;
+        }
+
+        height: 50vh;
+        background-image: url("../img/footerbookshelf.jpg");
+        background-size: cover;
+        // x = right | center | left
+        // y = top | center | bottom
+        background-position: center;
+        // margin-top: 80px;
+    }
+}
+

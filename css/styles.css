@@ -532,6 +532,11 @@ footer ul {
     padding: 16px 48px;
   }
 }
+@media (min-width: 1024px) {
+  footer ul {
+    padding: 16px 128px;
+  }
+}
 footer ul li a {
   color: var(--white);
 }
@@ -842,5 +847,82 @@ footer ul li a {
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding-right: 8px;
+  }
+}
+
+/* =============
+    Contact
+============= */
+#contact-me h1 {
+  text-align: center;
+  background-color: var(--blueMidnight);
+  color: var(--blueMisty);
+  margin-bottom: 16px;
+}
+#contact-me #goodbye-img {
+  height: 50vh;
+  background-image: url("../img/Phonebooth.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  #contact-me #goodbye-img {
+    margin: 0 32px 0 32px;
+  }
+}
+@media (min-width: 1024px) {
+  #contact-me #goodbye-img {
+    height: 100vh;
+    margin: 0 96px 0 96px;
+  }
+}
+#contact-me .blueDarkButton {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+#contact-me .blueDarkButton a {
+  color: var(--white);
+}
+@media (min-width: 768px) {
+  #contact-me .blueDarkButton {
+    font-size: 1.5rem;
+    padding: 16px 20px;
+  }
+}
+#contact-me #email-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#contact-me h2 {
+  text-align: center;
+  background-color: var(--blueMisty);
+  color: var(--blueMidnight);
+  margin: 16px 0;
+}
+#contact-me #cat-shelf-img {
+  height: 50vh;
+  background-image: url("../img/footerbookshelf.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  #contact-me #cat-shelf-img {
+    margin: 0 32px 0 32px;
+  }
+}
+@media (min-width: 1024px) {
+  #contact-me #cat-shelf-img {
+    height: 100vh;
+    margin: 0 96px 0 96px;
   }
 }
