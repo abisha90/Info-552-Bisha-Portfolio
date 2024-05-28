@@ -16,7 +16,20 @@
         color: var(--blueMidnight);
         margin: 16px 0;
         text-align: center;
+
+        @include md{
+            text-align: left;
+            padding-left: 8px;
         }
+        }
+
+        p{
+            margin-left: 8px;
+            @include md{
+                margin: 0 240px 0 8px;
+            }
+        }
+
 
         .blueDarkButton{
             font-size: rem-calc(18);
@@ -33,24 +46,44 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include md{
+                justify-content: flex-end;
+                padding-right: 8px;
+            }
         }
 
         #ila-btn{
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include md{
+                justify-content: flex-end;
+                padding-right: 8px;
+            }
         }
 
         #acjr-btn{
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include md{
+                justify-content: flex-end;
+                padding-right: 8px;
+            }
         }
 
         #flp-btn{
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include md{
+                justify-content: flex-end;
+                padding-right: 8px;
+            }
         }
     }
 }

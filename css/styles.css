@@ -744,6 +744,20 @@ footer ul li a {
   margin: 16px 0;
   text-align: center;
 }
+@media (min-width: 768px) {
+  #prof-orgs #org-list h2 {
+    text-align: left;
+    padding-left: 8px;
+  }
+}
+#prof-orgs #org-list p {
+  margin-left: 8px;
+}
+@media (min-width: 768px) {
+  #prof-orgs #org-list p {
+    margin: 0 240px 0 8px;
+  }
+}
 #prof-orgs #org-list .blueDarkButton {
   font-size: 1.125rem;
   font-weight: 600;
@@ -765,6 +779,14 @@ footer ul li a {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (min-width: 768px) {
+  #prof-orgs #org-list #ala-btn {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 8px;
+  }
+}
 #prof-orgs #org-list #ila-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -775,6 +797,14 @@ footer ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (min-width: 768px) {
+  #prof-orgs #org-list #ila-btn {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 8px;
+  }
 }
 #prof-orgs #org-list #acjr-btn {
   display: -webkit-box;
@@ -787,6 +817,14 @@ footer ul li a {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (min-width: 768px) {
+  #prof-orgs #org-list #acjr-btn {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 8px;
+  }
+}
 #prof-orgs #org-list #flp-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -797,4 +835,12 @@ footer ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (min-width: 768px) {
+  #prof-orgs #org-list #flp-btn {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 8px;
+  }
 }
