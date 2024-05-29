@@ -33,4 +33,20 @@ footer{
             }
         }
     }
+
+    #footer-img{
+        height:10vh;
+        background-image: url("../img/footerbookshelf.jpg");
+        background-size: cover;
+        // x = right | center | left
+        // y = top | center | bottom
+        background-position: left center;
+        // margin-top: 80px;
+
+        @include lg{
+            height: 20vh;
+        }
+    }
+
+
 }

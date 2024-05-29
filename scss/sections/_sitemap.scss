@@ -1,0 +1,24 @@
+/* =============
+    Sitemap
+============= */
+
+    h1{
+        text-align: center;
+        background-color: var(--blueMidnight);
+        color: var(--blueMisty);
+        margin: 16px 0;
+    }
+
+    #sitemap{
+        ul{
+            @include md{
+                font-size: rem-calc(28);
+            }
+        }
+
+    }
+
+
+
+
+
