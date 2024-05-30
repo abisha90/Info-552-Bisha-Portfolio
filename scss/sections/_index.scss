@@ -4,6 +4,19 @@
 
 #index-philosophy{
 
+    // .profile-img{
+
+    //     background-image: url("../img/catonbooks.jpg");
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: cover;
+
+    //     height: 100px;
+    //     width: 100px;
+    //     border-radius: 100%;
+    //     margin: 16px auto 0;
+    // }
+
     h1{
         text-align: center;
         background-color: var(--blueMidnight);
@@ -12,7 +25,13 @@
 
     #powers-quote{
         text-align: center;
-        padding: 16px 0;
+        padding: 16px 12px;
+        font-size: rem-calc(17);
+        font-weight: 500;
+        span{
+            font-style: italic;
+            font-size: rem-calc(20);
+        }
     }
 
     p{

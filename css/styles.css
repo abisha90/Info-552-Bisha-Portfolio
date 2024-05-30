@@ -346,11 +346,11 @@ ul li {
 }
 
 .header-padding {
-  padding-top: 90px;
+  padding-top: 40px;
 }
 @media (min-width: 768px) {
   .header-padding {
-    padding-top: 220px;
+    padding-top: 200px;
   }
 }
 
@@ -360,6 +360,17 @@ ul li {
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+.profile-img {
+  background-image: url("../img/catonbooks.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin: 16px auto 0;
 }
 
 .hide-img {
@@ -468,7 +479,7 @@ header {
   left: 0;
   right: 0;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--blueMisty);
 }
 
 #burger-container {
@@ -544,7 +555,7 @@ footer ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: var(--blueGray);
-  margin-top: 16px;
+  margin-top: 8px;
   padding: 8px 0;
 }
 @media (min-width: 768px) {
@@ -582,7 +593,13 @@ footer #footer-img {
 }
 #index-philosophy #powers-quote {
   text-align: center;
-  padding: 16px 0;
+  padding: 16px 12px;
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+#index-philosophy #powers-quote span {
+  font-style: italic;
+  font-size: 1.25rem;
 }
 #index-philosophy p {
   text-align: center;
@@ -619,32 +636,66 @@ footer #footer-img {
 /* =============
     About
 ============= */
+@media (min-width: 768px) {
+  #about-me {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 768px auto;
+    grid-template-columns: auto 768px auto;
+        grid-template-areas: ". cat-profile ." "about-h1 about-h1 about-h1" ". about-ul .";
+  }
+}
+@media (min-width: 768px) {
+  #about-me #cat-profile {
+    grid-area: cat-profile;
+  }
+}
+@media (min-width: 768px) {
+  #about-me #about-h1 {
+    grid-area: about-h1;
+  }
+}
 #about-me h1 {
   text-align: center;
   background-color: var(--blueMidnight);
   color: var(--blueMisty);
 }
 @media (min-width: 768px) {
-  #about-me ul {
-    margin: 0 64px 0 48px;
+  #about-me #about-ul {
+    grid-area: about-ul;
   }
-}
-@media (min-width: 1024px) {
-  #about-me ul {
-    text-align: center;
-  }
-}
-#about-me ul li {
-  padding: 8px 16px 0 8px;
 }
 @media (min-width: 768px) {
-  #about-me ul li {
-    padding: 16px 16px 16px 0;
+  #about-me #cat-profile {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  #about-me #about-h1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  #about-me #about-ul {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
   }
 }
+#about-me ul {
+  padding: 0 16px;
+}
+#about-me ul li {
+  padding-bottom: 8px;
+  line-height: 1.5;
+}
 #about-me ul li a {
-  font-weight: 700;
+  text-decoration: underline;
   color: var(--blueDark);
+  font-weight: 500;
+}
+#about-me ul li span {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: italic;
 }
 
 #cat-gallery-container h1 {
@@ -652,6 +703,7 @@ footer #footer-img {
   color: var(--blueMidnight);
   margin: 16px 0;
   text-align: center;
+  font-weight: 500;
 }
 #cat-gallery-container #cat-gallery {
   padding: 0 16px 16px 16px;
@@ -777,6 +829,25 @@ footer #footer-img {
 /* =============
     Resume
 ============= */
+@media (min-width: 768px) {
+  #my-resume {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 768px auto;
+    grid-template-columns: auto 768px auto;
+        grid-template-areas: ". profile-cat ." "resume-h1 resume-h1 resume-h1" ". resume-btn ." ". resume-head ." ". resume-body .";
+  }
+}
+@media (min-width: 768px) {
+  #my-resume #profile-cat {
+    grid-area: profile-cat;
+  }
+}
+@media (min-width: 768px) {
+  #my-resume #resume-h1 {
+    grid-area: resume-h1;
+  }
+}
 #my-resume h1 {
   text-align: center;
   background-color: var(--blueMidnight);
@@ -786,25 +857,59 @@ footer #footer-img {
   text-align: center;
   padding: 12px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #my-resume #resume-btn {
-    padding-bottom: 24px;
+    grid-area: resume-btn;
   }
 }
-#my-resume #resume-full-txt {
+#my-resume #resume-head {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #my-resume #resume-head {
+    grid-area: resume-head;
+  }
+}
+#my-resume #resume-body {
   padding-left: 8px;
 }
-#my-resume #resume-full-txt h2 {
-  text-align: center;
+@media (min-width: 768px) {
+  #my-resume #resume-body {
+    grid-area: resume-body;
+  }
 }
-#my-resume #resume-full-txt p {
-  text-align: center;
+@media (min-width: 768px) {
+  #my-resume #profile-cat {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  #my-resume #resume-h1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  #my-resume #resume-btn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  #my-resume #resume-head {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+  }
+  #my-resume #resume-body {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+  }
 }
-#my-resume #resume-full-txt h3 {
+#my-resume #resume-body h3 {
   padding-top: 16px;
+  font-size: 1.25rem;
 }
-#my-resume #resume-full-txt ul li {
+#my-resume #resume-body ul li {
   padding-top: 4px;
+}
+#my-resume #resume-body ul li span {
+  font-weight: 600;
 }
 
 /* =============
@@ -819,6 +924,7 @@ footer #footer-img {
   text-align: center;
   background-color: var(--blueDrexel);
   color: var(--yellowDrexel);
+  font-weight: 500;
 }
 
 /* =============
@@ -834,6 +940,7 @@ footer #footer-img {
   color: var(--blueMidnight);
   margin: 16px 0;
   text-align: center;
+  font-weight: 500;
 }
 @media (min-width: 768px) {
   #prof-orgs #org-list h2 {
@@ -851,7 +958,7 @@ footer #footer-img {
 }
 #prof-orgs #org-list .blueDarkButton {
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: 500;
   padding: 8px 16px;
   margin-top: 8px;
   margin-left: 8px;
@@ -964,7 +1071,7 @@ footer #footer-img {
 }
 #contact-me .blueDarkButton {
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: 500;
   padding: 8px 16px;
   margin-top: 8px;
   margin-left: 8px;
@@ -994,6 +1101,7 @@ footer #footer-img {
   background-color: var(--blueMisty);
   color: var(--blueMidnight);
   margin: 16px 0;
+  font-weight: 500;
 }
 #contact-me #cat-shelf-img {
   height: 50vh;

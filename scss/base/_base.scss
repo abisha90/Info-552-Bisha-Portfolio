@@ -12,10 +12,10 @@ ul{
 }
 
 .header-padding{
-    padding-top: 90px;
+    padding-top: 40px;
 
     @include md{
-        padding-top: 220px;
+        padding-top: 200px;
     }
 }
 
@@ -26,6 +26,19 @@ ul{
     width: 100%;
     text-align: center;
   }
+
+.profile-img{
+
+    background-image: url("../img/catonbooks.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin: 16px auto 0;
+}  
 
 .hide-img{
     display: none;
