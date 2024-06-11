@@ -46,6 +46,22 @@
         "info-684-btn info-684"
         "info-890-btn info-890";
 
+        @include md{
+            padding: 16px 48px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+
+            grid-template-areas:
+            "info-505-btn info-505 info-506-btn info-506"
+            "info-507-btn info-507 info-508-btn info-508"
+            "info-552-btn info-552 info-590-btn info-590"
+            "info-591-btn info-591 info-649-btn info-649"
+            "info-657-btn info-657 info-662-btn info-662"
+            "info-680-btn info-680 info-683-btn info-683"
+            "info-684-btn info-684 info-890-btn info-890";
+
+        }
+
         #info-505-btn{
             grid-area: info-505-btn;
         }
@@ -208,9 +224,12 @@
     #sample-work{
         padding: 16px 0;
         li{
-            padding-bottom: 8px;
+            padding-bottom: 16px;
             a{
                 color: var(--blueDrexel);
+                i{
+                    font-size: rem-calc(40);
+                }
             }
         }
 
@@ -256,6 +275,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-style: italic;
         }
 
         #proj-680-vid{
@@ -271,6 +291,7 @@
             justify-content: center;
             align-items: center;
             padding-left: 32px;
+            font-style: italic;
         }
 
         #proj-flc-btn{
@@ -289,6 +310,7 @@
             justify-content: center;
             align-items: center;
             padding-left: 32px;
+            font-style: italic;
         }
     }
 }
