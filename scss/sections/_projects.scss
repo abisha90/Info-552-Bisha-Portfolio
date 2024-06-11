@@ -62,6 +62,10 @@
 
         }
 
+        @include lg{
+            padding: 16px 164px;
+        }
+
         #info-505-btn{
             grid-area: info-505-btn;
         }
@@ -257,10 +261,11 @@
 
         #proj-505{
             grid-area: proj-505;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
             font-style: italic;
+            padding: 0 32px;
         }
 
         #proj-649-btn{
@@ -272,10 +277,11 @@
 
         #proj-649{
             grid-area: proj-649;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
             font-style: italic;
+            padding: 0 32px;
         }
 
         #proj-680-vid{
@@ -287,10 +293,10 @@
 
         #proj-680{
             grid-area: proj-680;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-left: 32px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 0 32px;
             font-style: italic;
         }
 
@@ -306,10 +312,10 @@
 
         #proj-flc{
             grid-area: proj-flc;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-left: 32px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 0 32px;
             font-style: italic;
         }
     }

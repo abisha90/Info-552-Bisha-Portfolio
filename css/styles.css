@@ -958,6 +958,11 @@ footer #footer-img {
         grid-template-areas: "info-505-btn info-505 info-506-btn info-506" "info-507-btn info-507 info-508-btn info-508" "info-552-btn info-552 info-590-btn info-590" "info-591-btn info-591 info-649-btn info-649" "info-657-btn info-657 info-662-btn info-662" "info-680-btn info-680 info-683-btn info-683" "info-684-btn info-684 info-890-btn info-890";
   }
 }
+@media (min-width: 1024px) {
+  #coursework #course-list {
+    padding: 16px 164px;
+  }
+}
 #coursework #course-list #info-505-btn {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -1294,16 +1299,8 @@ footer #footer-img {
 }
 #coursework #sample-work #proj-505 {
   grid-area: proj-505;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-style: italic;
+  padding: 0 32px;
 }
 #coursework #sample-work #proj-649-btn {
   grid-area: proj-649-btn;
@@ -1319,16 +1316,8 @@ footer #footer-img {
 }
 #coursework #sample-work #proj-649 {
   grid-area: proj-649;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-style: italic;
+  padding: 0 32px;
 }
 #coursework #sample-work #proj-680-vid {
   grid-area: proj-680-vid;
@@ -1344,16 +1333,7 @@ footer #footer-img {
 }
 #coursework #sample-work #proj-680 {
   grid-area: proj-680;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 32px;
+  padding: 0 32px;
   font-style: italic;
 }
 #coursework #sample-work #proj-flc-btn {
@@ -1373,16 +1353,7 @@ footer #footer-img {
 }
 #coursework #sample-work #proj-flc {
   grid-area: proj-flc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 32px;
+  padding: 0 32px;
   font-style: italic;
 }
 @media (min-width: 768px) {
