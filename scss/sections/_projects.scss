@@ -16,4 +16,279 @@
         color: var(--yellowDrexel);
         font-weight: 500;
     }
+
+    #course-list{
+        padding: 16px 8px;
+
+        li{
+            a{
+                color: var(--blueDrexel);
+            }
+        }
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+
+        grid-template-areas:
+        "info-505-btn info-505"
+        "info-506-btn info-506"
+        "info-507-btn info-507"
+        "info-508-btn info-508"
+        "info-552-btn info-552"
+        "info-590-btn info-590"
+        "info-591-btn info-591"
+        "info-649-btn info-649"
+        "info-657-btn info-657"
+        "info-662-btn info-662"
+        "info-680-btn info-680"
+        "info-683-btn info-683"
+        "info-684-btn info-684"
+        "info-890-btn info-890";
+
+        #info-505-btn{
+            grid-area: info-505-btn;
+        }
+
+        #info-505{
+            grid-area: info-505;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--blueDrexel);
+        }
+
+        #info-506-btn{
+            grid-area: info-506-btn;
+        }
+
+        #info-506{
+            grid-area: info-506;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--blueDrexel);
+        }
+
+        #info-507-btn{
+            grid-area: info-507-btn;
+        }
+
+        #info-507{
+            grid-area: info-507;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--blueDrexel);
+        }
+
+        #info-508-btn{
+            grid-area: info-508-btn;
+        }
+
+        #info-508{
+            grid-area: info-508;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--blueDrexel);
+        }
+
+        #info-552-btn{
+            grid-area: info-552-btn;
+        }
+
+        #info-552{
+            grid-area: info-552;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--blueDrexel);
+        }
+
+        #info-590-btn{
+            grid-area: info-590-btn;
+        }
+
+        #info-590{
+            grid-area: info-590;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--blueDrexel);
+        }
+
+        #info-591-btn{
+            grid-area: info-591-btn;
+        }
+
+        #info-591{
+            grid-area: info-591;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--blueDrexel);
+        }
+
+        #info-649-btn{
+            grid-area: info-649-btn;
+        }
+
+        #info-649{
+            grid-area: info-649;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--blueDrexel);
+        }
+
+        #info-657-btn{
+            grid-area: info-657-btn;
+        }
+
+        #info-657{
+            grid-area: info-657;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--blueDrexel);
+        }
+
+        #info-662-btn{
+            grid-area: info-662-btn;
+        }
+
+        #info-662{
+            grid-area: info-662;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--blueDrexel);
+        }
+
+        #info-680-btn{
+            grid-area: info-680-btn;
+        }
+
+        #info-680{
+            grid-area: info-680;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--blueDrexel);
+        }
+
+        #info-683-btn{
+            grid-area: info-683-btn;
+        }
+
+        #info-683{
+            grid-area: info-683;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--blueDrexel);
+        }
+
+        #info-684-btn{
+            grid-area: info-684-btn;
+        }
+
+        #info-684{
+            grid-area: info-684;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--blueDrexel);
+        }
+
+        #info-890-btn{
+            grid-area: info-890-btn;
+            a{
+                color: var(--white);
+            }
+        }
+
+        #info-890{
+            grid-area: info-890;
+            font-style: italic;
+            font-weight: 500;
+            color: var(--blueDrexel);
+        }
+
+    }
+
+    #sample-work{
+        padding: 16px 0;
+        li{
+            padding-bottom: 8px;
+            a{
+                color: var(--blueDrexel);
+            }
+        }
+
+        @include md{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+
+            grid-template-areas:
+            "proj-505-btn proj-505-btn proj-649-btn proj-649-btn"
+            "proj-505 proj-505 proj-649 proj-649"
+            ". proj-680-vid proj-680-vid ."
+            ". proj-680 proj-680 ."
+            ". proj-flc-btn proj-flc-btn ."
+            ". proj-flc proj-flc .";
+    
+        }
+
+        #proj-505-btn{
+            grid-area: proj-505-btn;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #proj-505{
+            grid-area: proj-505;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: italic;
+        }
+
+        #proj-649-btn{
+            grid-area: proj-649-btn;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #proj-649{
+            grid-area: proj-649;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #proj-680-vid{
+            grid-area: proj-680-vid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #proj-680{
+            grid-area: proj-680;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 32px;
+        }
+
+        #proj-flc-btn{
+            grid-area: proj-flc-btn;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                color: var(--white);
+            }
+        }
+
+        #proj-flc{
+            grid-area: proj-flc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 32px;
+        }
+    }
 }

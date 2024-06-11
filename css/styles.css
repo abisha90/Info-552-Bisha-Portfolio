@@ -420,6 +420,15 @@ button {
   border-radius: 8px;
 }
 
+.drexelButton {
+  background-color: var(--yellowDrexel);
+  color: var(--blueDrexel);
+  font-size: 1.125rem;
+  font-weight: 800;
+  padding: 16px 40px;
+  border-radius: 8px;
+}
+
 /* =============
     Forms
 ============= */
@@ -925,6 +934,368 @@ footer #footer-img {
   background-color: var(--blueDrexel);
   color: var(--yellowDrexel);
   font-weight: 500;
+}
+#coursework #course-list {
+  padding: 16px 8px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  -ms-grid-rows: auto 8px auto 8px auto 8px auto 8px auto 8px auto 8px auto 8px auto 8px auto 8px auto 8px auto 8px auto 8px auto 8px auto;
+      grid-template-areas: "info-505-btn info-505" "info-506-btn info-506" "info-507-btn info-507" "info-508-btn info-508" "info-552-btn info-552" "info-590-btn info-590" "info-591-btn info-591" "info-649-btn info-649" "info-657-btn info-657" "info-662-btn info-662" "info-680-btn info-680" "info-683-btn info-683" "info-684-btn info-684" "info-890-btn info-890";
+}
+#coursework #course-list li a {
+  color: var(--blueDrexel);
+}
+#coursework #course-list #info-505-btn {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: info-505-btn;
+}
+#coursework #course-list #info-505 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: info-505;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--blueDrexel);
+}
+#coursework #course-list #info-506-btn {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: info-506-btn;
+}
+#coursework #course-list #info-506 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: info-506;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--blueDrexel);
+}
+#coursework #course-list #info-507-btn {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: info-507-btn;
+}
+#coursework #course-list #info-507 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: info-507;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--blueDrexel);
+}
+#coursework #course-list #info-508-btn {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: info-508-btn;
+}
+#coursework #course-list #info-508 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+  grid-area: info-508;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--blueDrexel);
+}
+#coursework #course-list #info-552-btn {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: info-552-btn;
+}
+#coursework #course-list #info-552 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+  grid-area: info-552;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--blueDrexel);
+}
+#coursework #course-list #info-590-btn {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  grid-area: info-590-btn;
+}
+#coursework #course-list #info-590 {
+  -ms-grid-row: 11;
+  -ms-grid-column: 3;
+  grid-area: info-590;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--blueDrexel);
+}
+#coursework #course-list #info-591-btn {
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  grid-area: info-591-btn;
+}
+#coursework #course-list #info-591 {
+  -ms-grid-row: 13;
+  -ms-grid-column: 3;
+  grid-area: info-591;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--blueDrexel);
+}
+#coursework #course-list #info-649-btn {
+  -ms-grid-row: 15;
+  -ms-grid-column: 1;
+  grid-area: info-649-btn;
+}
+#coursework #course-list #info-649 {
+  -ms-grid-row: 15;
+  -ms-grid-column: 3;
+  grid-area: info-649;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--blueDrexel);
+}
+#coursework #course-list #info-657-btn {
+  -ms-grid-row: 17;
+  -ms-grid-column: 1;
+  grid-area: info-657-btn;
+}
+#coursework #course-list #info-657 {
+  -ms-grid-row: 17;
+  -ms-grid-column: 3;
+  grid-area: info-657;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--blueDrexel);
+}
+#coursework #course-list #info-662-btn {
+  -ms-grid-row: 19;
+  -ms-grid-column: 1;
+  grid-area: info-662-btn;
+}
+#coursework #course-list #info-662 {
+  -ms-grid-row: 19;
+  -ms-grid-column: 3;
+  grid-area: info-662;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--blueDrexel);
+}
+#coursework #course-list #info-680-btn {
+  -ms-grid-row: 21;
+  -ms-grid-column: 1;
+  grid-area: info-680-btn;
+}
+#coursework #course-list #info-680 {
+  -ms-grid-row: 21;
+  -ms-grid-column: 3;
+  grid-area: info-680;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--blueDrexel);
+}
+#coursework #course-list #info-683-btn {
+  -ms-grid-row: 23;
+  -ms-grid-column: 1;
+  grid-area: info-683-btn;
+}
+#coursework #course-list #info-683 {
+  -ms-grid-row: 23;
+  -ms-grid-column: 3;
+  grid-area: info-683;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--blueDrexel);
+}
+#coursework #course-list #info-684-btn {
+  -ms-grid-row: 25;
+  -ms-grid-column: 1;
+  grid-area: info-684-btn;
+}
+#coursework #course-list #info-684 {
+  -ms-grid-row: 25;
+  -ms-grid-column: 3;
+  grid-area: info-684;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--blueDrexel);
+}
+#coursework #course-list #info-890-btn {
+  -ms-grid-row: 27;
+  -ms-grid-column: 1;
+  grid-area: info-890-btn;
+}
+#coursework #course-list #info-890-btn a {
+  color: var(--white);
+}
+#coursework #course-list #info-890 {
+  -ms-grid-row: 27;
+  -ms-grid-column: 3;
+  grid-area: info-890;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--blueDrexel);
+}
+#coursework #sample-work {
+  padding: 16px 0;
+}
+#coursework #sample-work li {
+  padding-bottom: 8px;
+}
+#coursework #sample-work li a {
+  color: var(--blueDrexel);
+}
+@media (min-width: 768px) {
+  #coursework #sample-work {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    -ms-grid-rows: auto 16px auto 16px auto 16px auto 16px auto 16px auto;
+        grid-template-areas: "proj-505-btn proj-505-btn proj-649-btn proj-649-btn" "proj-505 proj-505 proj-649 proj-649" ". proj-680-vid proj-680-vid ." ". proj-680 proj-680 ." ". proj-flc-btn proj-flc-btn ." ". proj-flc proj-flc .";
+  }
+}
+#coursework #sample-work #proj-505-btn {
+  grid-area: proj-505-btn;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#coursework #sample-work #proj-505 {
+  grid-area: proj-505;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: italic;
+}
+#coursework #sample-work #proj-649-btn {
+  grid-area: proj-649-btn;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#coursework #sample-work #proj-649 {
+  grid-area: proj-649;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#coursework #sample-work #proj-680-vid {
+  grid-area: proj-680-vid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#coursework #sample-work #proj-680 {
+  grid-area: proj-680;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 32px;
+}
+#coursework #sample-work #proj-flc-btn {
+  grid-area: proj-flc-btn;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#coursework #sample-work #proj-flc-btn a {
+  color: var(--white);
+}
+#coursework #sample-work #proj-flc {
+  grid-area: proj-flc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 32px;
+}
+@media (min-width: 768px) {
+  #coursework #sample-work #proj-505-btn {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  #coursework #sample-work #proj-505 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  #coursework #sample-work #proj-649-btn {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+  }
+  #coursework #sample-work #proj-649 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+  }
+  #coursework #sample-work #proj-680-vid {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+  }
+  #coursework #sample-work #proj-680 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+  }
+  #coursework #sample-work #proj-flc-btn {
+    -ms-grid-row: 9;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+  }
+  #coursework #sample-work #proj-flc {
+    -ms-grid-row: 11;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+  }
 }
 
 /* =============
