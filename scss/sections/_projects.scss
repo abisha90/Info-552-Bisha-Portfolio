@@ -225,98 +225,94 @@
 
     }
 
-    #sample-work{
-        padding: 16px 0;
-        li{
-            padding-bottom: 16px;
-            a{
-                color: var(--blueDrexel);
-                i{
-                    font-size: rem-calc(40);
+
+
+        #sample-work{
+            padding: 16px 0;
+    
+            li{
+                padding-bottom: 16px;
+                a{
+                    color: var(--blueDrexel);
+                    i{
+                        font-size: rem-calc(40);
+                    }
                 }
             }
-        }
-
-        @include md{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 16px;
-
-            grid-template-areas:
-            "proj-505-btn proj-505-btn proj-649-btn proj-649-btn"
-            "proj-505 proj-505 proj-649 proj-649"
-            ". proj-680-vid proj-680-vid ."
-            ". proj-680 proj-680 ."
-            ". proj-flc-btn proj-flc-btn ."
-            ". proj-flc proj-flc .";
     
-        }
-
-        #proj-505-btn{
-            grid-area: proj-505-btn;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #proj-505{
-            grid-area: proj-505;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            font-style: italic;
-            padding: 0 32px;
-        }
-
-        #proj-649-btn{
-            grid-area: proj-649-btn;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #proj-649{
-            grid-area: proj-649;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            font-style: italic;
-            padding: 0 32px;
-        }
-
-        #proj-680-vid{
-            grid-area: proj-680-vid;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #proj-680{
-            grid-area: proj-680;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            padding: 0 32px;
-            font-style: italic;
-        }
-
-        #proj-flc-btn{
-            grid-area: proj-flc-btn;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            a{
-                color: var(--white);
+            display: grid;
+            grid-template-columns: 32px auto 32px;
+            grid-template-areas:
+            ". proj-505-btn ."
+            ". proj-505 ."
+            ". proj-649-btn ."
+            ". proj-649 ."
+            ". proj-680-vid ."
+            ". proj-680 ."
+            ". proj-flc-btn ."
+            ". proj-flc .";
+    
+            @include md{
+                padding: 16px;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 16px;
+    
+                grid-template-areas:
+                "proj-505-btn proj-505 proj-649-btn proj-649 proj-flc-btn proj-flc"
+                ". proj-680-vid proj-680-vid . proj-680 .";
+        
+            }
+            
+            @include lg{
+                padding: 16px 164px;
+            }
+    
+            #proj-505-btn{
+                grid-area: proj-505-btn;
+            }
+    
+            #proj-505{
+                grid-area: proj-505;
+                font-style: italic;
+    
+            }
+    
+            #proj-649-btn{
+                grid-area: proj-649-btn;
+            }
+    
+            #proj-649{
+                grid-area: proj-649;
+                font-style: italic;
+    
+            }
+    
+            #proj-680-vid{
+                grid-area: proj-680-vid;
+            }
+    
+            #proj-680{
+                grid-area: proj-680;
+                font-style: italic;
+                padding-top: 48px;
+            }
+    
+            #proj-flc-btn{
+                grid-area: proj-flc-btn;
+                a{
+                    color: var(--white);
+                }
+            }
+    
+            #proj-flc{
+                grid-area: proj-flc;
+                font-style: italic;
             }
         }
+    
+    
 
-        #proj-flc{
-            grid-area: proj-flc;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            padding: 0 32px;
-            font-style: italic;
-        }
+
+
     }
-}
