@@ -386,6 +386,13 @@ ul li {
 }
 
 /* =============
+    Fancy Apps
+============= */
+.fancybox__container {
+  --fancybox-bg: rgb(12 65 96 / 80%);
+}
+
+/* =============
     Typography
 ============= */
 body {
@@ -739,6 +746,11 @@ footer #footer-img {
 }
 #cat-gallery-container #cat-gallery li {
   background-size: cover;
+}
+#cat-gallery-container #cat-gallery li a {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
 }
 #cat-gallery-container #g1 {
   -ms-grid-row: 1;
