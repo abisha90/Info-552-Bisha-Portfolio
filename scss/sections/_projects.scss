@@ -21,6 +21,9 @@
         padding: 16px 8px;
 
         li{
+            display: flex;
+            align-items: center;
+            padding-bottom: 8px;
             a{
                 color: var(--blueDrexel);
             }
@@ -28,7 +31,8 @@
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
+        grid-template-rows: repeat(14, 1fr);
+        // gap: 8px;
 
         grid-template-areas:
         "info-505-btn info-505"
@@ -49,6 +53,7 @@
         @include md{
             padding: 16px 48px;
             grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(7, 1fr);
             gap: 16px;
 
             grid-template-areas:
@@ -231,17 +236,18 @@
             padding: 16px 0;
     
             li{
-                padding-bottom: 16px;
+                // padding-bottom: 16px;
                 a{
                     color: var(--blueDrexel);
                     i{
-                        font-size: rem-calc(40);
+                        font-size: rem-calc(32);
                     }
                 }
             }
     
             display: grid;
             grid-template-columns: 32px auto 32px;
+            grid-template-rows: 8vh 10vh 8vh auto 25vh 16vh 8vh 10vh;
             grid-template-areas:
             ". proj-505-btn ."
             ". proj-505 ."
@@ -256,6 +262,7 @@
                 padding: 16px;
                 display: grid;
                 grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: 25vh auto;
                 gap: 16px;
     
                 grid-template-areas:

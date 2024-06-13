@@ -33,8 +33,11 @@
     }    
     
         #resume-btn{
+            a{
+                color: var(--white);
+            }
             text-align: center;
-            padding: 12px;
+            padding: 16px;
 
             @include md{
                 grid-area: resume-btn;
@@ -46,6 +49,7 @@
         }
 
         #resume-head{
+            padding-top: 8px;
             text-align: center;
             @include md{
                 grid-area: resume-head;
