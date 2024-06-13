@@ -1,6 +1,4 @@
-Fancybox.bind("[data-fancybox]", {
-    // Your custom options
-  });
+
   
 
 
@@ -27,3 +25,7 @@ mainNavContainer.addEventListener("click", function(){
     mainNavContainer.classList.add("hideMainNavAtMobile");
     mainNavVisible = false;
 })
+
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
