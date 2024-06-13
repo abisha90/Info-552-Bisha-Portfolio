@@ -273,6 +273,11 @@
             
             @include lg{
                 padding: 16px 164px;
+                grid-template-rows: 40vh auto;
+                // display: grid;
+                // grid-template-columns: repeat(6, 1fr);
+                // grid-template-rows: 25vh auto;
+                // gap: 16px;
             }
     
             #proj-505-btn{

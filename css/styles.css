@@ -1320,6 +1320,8 @@ footer #footer-img {
 @media (min-width: 1024px) {
   #coursework #sample-work {
     padding: 16px 164px;
+    -ms-grid-rows: 40vh auto;
+    grid-template-rows: 40vh auto;
   }
 }
 #coursework #sample-work #proj-505-btn {
